@@ -151,7 +151,7 @@ const HeaderX = ({ home }) => {
             Buy Books
           </Link>
           <Link
-            href="#notes"
+            href={"/download-notes"}
             className="text-md navlink relative text-white hover:text-gray-200 duration-300"
           >
             Notes

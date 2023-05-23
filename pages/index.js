@@ -12,7 +12,7 @@ import axios from "axios";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home({initialData}) {
+export default function Home({ initialData }) {
   const { user, isAuthenticated } = useSelector((state) => state.auth);
   return (
     <>
@@ -41,7 +41,7 @@ export default function Home({initialData}) {
 
         <PSITestBoxes />
 
-        <div
+        {/* <div
           className="flex flex-col justify-center items-center p-1"
           id="notes"
         >
@@ -95,7 +95,7 @@ export default function Home({initialData}) {
               cg={"cg-syellow"}
             />
           </div>
-        </div>
+        </div> */}
       </Layout>
     </>
   );

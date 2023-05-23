@@ -109,7 +109,7 @@ const register = () => {
       </Head>
       <div className=" flex justify-center items-center w-full min-h-[400px] py-16 bg-wite">
         <form
-          className=" px-6 pt-6 pb-4 mb-4 min-w-[300px] sm:w-[400px] backdrop-blur-lg border-[.5px] border-purple-500 bg-gray-100/20 shadow-lg shadow-purple-700 rounded-md"
+          className="mx-4 px-6 pt-6 pb-4 mb-4 min-w-[300px] sm:w-[400px] backdrop-blur-lg border-[.5px] border-purple-500 bg-gray-100/20 shadow-lg shadow-purple-700 rounded-md"
           onSubmit={registerSubmit}
         >
           <div className="mb-4">
