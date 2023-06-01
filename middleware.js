@@ -30,6 +30,16 @@ export default function middleware(req) {
     return NextResponse.redirect(`${clientURL}/login`);
   }
 
+  if (!verify && url === `${clientURL}/mcqs/manage`) {
+    return NextResponse.redirect(`${clientURL}/login`);
+  }
+  if (!verify && url === `${clientURL}/mcqs/create`) {
+    return NextResponse.redirect(`${clientURL}/login`);
+  }
+  if (!verify && url.includes("/mcqs/update")) {
+    return NextResponse.redirect(`${clientURL}/login`);
+  }
+
   if (!verify && url === `${clientURL}/order-confirm`) {
     return NextResponse.redirect(`${clientURL}/login`);
   }

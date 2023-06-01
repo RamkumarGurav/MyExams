@@ -8,6 +8,7 @@ const nextConfig = {
       "encrypted-tbn0.gstatic.com",
       "cdn01.sapnaonline.com",
       "media.giphy.com",
+      "res.cloudinary.com",
     ],
   },
 

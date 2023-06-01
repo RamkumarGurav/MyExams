@@ -140,7 +140,7 @@ const HeaderX = ({ home }) => {
             Tests
           </Link>
           <Link
-            href={"/mcqs"}
+            href={"/mcqs/all"}
             className="text-md navlink relative text-white hover:text-gray-200 duration-300"
           >
             MCQS
@@ -154,6 +154,7 @@ const HeaderX = ({ home }) => {
           <Link
             href={"/download-notes"}
             className="text-md navlink relative text-white hover:text-gray-200 duration-300"
+            scroll={false}
           >
             Notes
           </Link>
@@ -168,7 +169,7 @@ const HeaderX = ({ home }) => {
             <div className="flex flex-col items-center lg:flex-row gap-4">
               <button
                 onClick={refetch}
-                className="text-md bg-white font-semibold text-[#9321df] duration-300 border-2 border-gray-50 px-2 py-1 rounded-md hover:bg-[#9321df] hover:text-white"
+                className="text-md bg-white font-semibold text-[#131313] duration-300 border-2 border-gray-50 px-2 py-1 rounded-md hover:bg-[#1d1d1d] hover:text-white"
               >
                 Logout
               </button>

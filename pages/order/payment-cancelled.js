@@ -2,10 +2,14 @@ import Layout from "../../layout/Layout";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import Head from "next/head";
 
 const paymentCancelled = () => {
   return (
     <Layout home>
+      <Head>
+        <title>Payment Cancelled | MyExams.com</title>
+      </Head>
       <div className="cart-empty flex flex-col gap-4 justify-center items-center h-[79vh] ">
         {/* <h1 className="sub-title">Empty Cart</h1>*/}
         <h1 className="text-2xl font-bold text-[tomato]">Payment Failed!</h1>

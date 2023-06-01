@@ -139,7 +139,7 @@ const HeaderX = ({ home }) => {
             Tests
           </Link>
           <Link
-            href={"/mcqs"}
+            href={"/mcqs/all"}
             className="text-md navlink relative text-white hover:text-gray-200 duration-300"
           >
             MCQS

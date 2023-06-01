@@ -30,16 +30,25 @@ const SectionQ = (props) => {
     setPageIndex(e);
   };
 
+  if(!qsData){
+    return <Spinner/>
+  }
+  if(error){
+    return <Error/>
+  }
+  
 
-  {isLoading && <Spinner />}
-  {isError && <Error />}
+  // {isLoading && <Spinner />}
+  // {isError && <Error />}
   return (
     <section id="qs-block" className="container mx-auto  py-10 px-2 lg:px-8">
-    {
-      qsData?.data.questions?.map((question,i)=>{
-      return (<Question data={...question} qno={i+((pageIndex-1)*resultsPerPage)} key={i}/>)
-      })
-    }
+    {qsData?.data.questions.length===0? (
+                <div className="flex justify-center items-start p-10 min-h-[55vh]">
+                  <h1 className="text-xl text-gray-700">No MCQS Found</h1>
+                </div>
+              ) : (qsData?.data.questions?.map((question,i)=>{
+      return (<Question data={...question} qno={i+((pageIndex-1)*resultsPerPage)} key={i}  />)
+      }))}
     {resultsPerPage < filteredQuestionsCount && (
         <div className="paginationBox">
           {(

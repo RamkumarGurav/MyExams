@@ -61,6 +61,8 @@ const ConfirmOrder = () => {
   const orderedItemsDetails = cItems?.map((item) => {
     return { productId: item.product, quantity: item.quantity };
   });
+  console.log(orderedItemsDetails);
+
   let bodyData;
   useEffect(() => {
     bodyData = {
